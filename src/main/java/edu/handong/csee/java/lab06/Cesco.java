@@ -2,24 +2,14 @@ package edu.handong.csee.java.lab06; //package name
 
 import java.util.Scanner; //import Scanner class to get input from user
 
-/**
- * This class defines a Cesco object. 
- * When you input the house volume value and the initial value of the bugs in the house,
- * you can get the total number of the bugs, the total bug volume,and the number of weeks taken until the house is full of bugs.
- * The growth rate of bugs is fixed at 0.95 and one bug volume is fixed at 0.002. 
- * @author jo jeong hoon
- *
- */
+
 public class Cesco { //define Cesco object
 
 	final double GROWTH_RATE = 0.95; //instance variable
 	final double ONE_BUG_VOLUME = 0.002;  //instance variable
 	
 	
-	/**
-	 * starts this program
-	 * @param args refers command-line arguments as an array of String objects.
-	 */
+
 	public static void main(String[] args) { //main method to initiate this program
 	
 		Scanner keyboard = new Scanner(System.in); // instantiate Scanner object
@@ -33,12 +23,7 @@ public class Cesco { //define Cesco object
 		myCesco.calculateBugPopulation(houseVolume, startPopulation); //the instance myCesco do the calculateBugPopulation method
 	}
 
-	/**
-	 * calculates the number of weeks, total bug population, and the number of weeks taken
-	 * and shows the results
-	 * @param houseVolume refers to the volume of the house
-	 * @param startPopulation refers to the initial population of bugs
-	 */
+	
 	public void calculateBugPopulation(double houseVolume, double startPopulation) { //define calculateRoachPopulation method
 		
 		double population = startPopulation; //local variable
