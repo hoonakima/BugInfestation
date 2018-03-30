@@ -15,9 +15,10 @@ public class Cesco { //define Cesco object
 	final double GROWTH_RATE = 0.95; //instance variable
 	final double ONE_BUG_VOLUME = 0.002;  //instance variable
 	
+	
 	/**
 	 * starts this program
-	 * 
+	 * @param args refers command-line arguments as an array of String objects.
 	 */
 	public static void main(String[] args) { //main method to initiate this program
 	
